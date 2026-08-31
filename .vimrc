@@ -58,3 +58,19 @@ highlight Pmenu          guibg=#1f2229 guifg=#c0caf5
 highlight PmenuSel       guibg=#7aa2f7 guifg=#1a1b26
 highlight ALEErrorSign   guifg=#f7768e guibg=#23262e
 highlight ALEWarningSign guifg=#e0af68 guibg=#23262e
+
+" ==========================================
+" Move lines/blocks up and down
+" ==========================================
+" Visual mode: move selected lines with J/K
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" Normal mode: move current line with Alt+j/k (optional)
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+
+call plug#begin('~/.vim/plugged')
+Plug 'dense-analysis/ale'
+Plug 'tpope/vim-commentary'
+call plug#end()
