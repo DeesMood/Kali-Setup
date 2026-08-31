@@ -13,7 +13,7 @@
 * Apperance > Style > Select "Orchis-Teal-Dark-Compact (GTK)"
 
 
-## 4. Icons: YAMIS + WhiteSur, merged
+**4. Icons: YAMIS + WhiteSur, merged**
 
 > NOT UPDATED
 
